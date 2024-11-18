@@ -4,7 +4,7 @@ import "./index.css";
 export const Footer = () => {
     return(
         <div className="footer">
-            <p>Footer</p>
+            <p>Technology Partner @faltuCoder</p>
         </div>
     );
 };

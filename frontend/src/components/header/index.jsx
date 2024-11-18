@@ -1,26 +1,34 @@
-import React from "react";
-import "./index.css";
+// import React, { useState } from "react";
+// import "./index.css";
+// import { FaHome } from "react-icons/fa";
+// //cilHamburgerMenu
+// import { CgMenu } from "react-icons/cg";
+// //create icon
+// import { AiOutlinePlus } from "react-icons/ai";
+// //contact icon
+// import { AiOutlineContacts } from "react-icons/ai";
+// import Logo from "../../assets/image/logo.png";
 
-export const Header = () => {
+// export const Header = () => {
   
-  return (
+//   return (
+
+    
+ 
    
-      <div className="nav">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/create">Create</a>
-          </li>
-          <li>
-            <a href="/contacts">Contact</a>
-          </li>
-        </ul>
-      </div>
+//       <div className="nav">
+//         <div className="logo">
+//                 <img src={Logo} alt="logo" />
+//                 <CgMenu/>
+//         </div>
+     
+//         <div className="title">
+//           <p>Welcome to : <span className="subtitle">Raj</span></p>
+//         </div>
+//       </div>
       
    
-  );
-};
+//   );
+// };
 
 

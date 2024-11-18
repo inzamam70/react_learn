@@ -1,33 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
 import './style/css/style.css';
-import { Header } from './components/header';
-import { Footer } from './components/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/home/home';
-import Create from './pages/create';
-import Edit from './pages/edit';
-import View from './pages/view';
-import Contact from './pages/contact';
-import Contacts from './pages/contacts';
-import { Sidenav } from './components/sidenav';
-import { Content } from './components/content';
 import { Template } from './components/template';
+import { HomeIndex } from './pages/homeindex';
+import { About } from './pages/about';
+import { Contact } from './pages/contacts';
+import { Login } from './pages/login';
+import { Register } from './pages/register';
+import { Activity } from './pages/activity';
+import { CurrentActivity } from './pages/currentactivity';
+import { News } from './pages/news';
+import { AffectedAreas } from './pages/AffectedAreas';
+import { Volunteer } from './pages/volunteer';
+import { TrainingCenter } from './pages/trainingcenter';
+import { Aids } from './pages/aids';
+
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
-        <Sidenav />
+        
+        {/* <HumbergerSidenav /> */}
         <div className='container'>
           <Routes>
-            <Route path='/*' element={<Template />} />
+            
+            <Route path='/' element={<HomeIndex />} />
+            <Route path='/about' element={<About/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/register' element={<Register/>}/>
+            <Route path='/activity' element={<Activity />} />
+            <Route path='/currentactivity' element={<CurrentActivity />} />
+            <Route path='/news' element={<News />} />
+            <Route path='/affectedares' element={<AffectedAreas />} />
+            <Route path='/volunteer' element={<Volunteer />} />
+            <Route path='/trainingcenter' element={<TrainingCenter />} />
+            <Route path='/aids' element={<Aids />} />
+            <Route path='/be/*' element={<Template />} />
           </Routes>
 
         </div>
-        <Footer />
+       
       </BrowserRouter>
 
     </div>
